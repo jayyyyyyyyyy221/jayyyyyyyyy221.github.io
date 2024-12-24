@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<title> 
+HAPPY BIRTHDAY Azzahra Raissy
+</title>
+<head>
+  <p></p>ayang coba deh pencet tombol di bawah terus itung berapaa kali ampe muncul sesuatuuuu
+  <p></p>
+  moga aja isinya uang :v xixixixixixi
+  <p></p><br>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button dan Gambar</title>
+    <script>
+        var jumlahPencetan = 0;
+
+        function tampilkanGambar() {
+            jumlahPencetan++;
+
+            if (jumlahPencetan === 22) {
+                var container = document.getElementById("gambarContainer");
+
+                var img = document.createElement("img");
+                img.src = "22tahun.webp"; 
+                img.alt = "Gambar";
+                img.width = 200;
+                img.height = 185;
+                
+                container.appendChild(img);
+                
+                var teksUcapan = document.createElement("p");
+                teksUcapan.textContent = "Selamat Ulang Tahun Ayanggg!";
+                container.appendChild(teksUcapan);
+                // Tambahkan teks pengguna ke dalam container
+                var teksCustom = document.createElement("p");
+                teksCustom.textContent = "siapa nii yang tahun iniii udah 22 tahunn????";
+                container.appendChild(teksCustom);
+                var teksCustom1 = document.createElement("p");
+                teksCustom1.textContent = "zzzz beda 2 tahun awas yaaaa";
+                container.appendChild(teksCustom1);
+                // Reset jumlah pencetan untuk penggunaan selanjutnya
+               
+              var tombol = document.getElementById("tombolUcapan");
+                tombol.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+  <center>
+    <p></p>
+    <button onclick="tampilkanGambar()">Click</button>
+    <div id="gambarContainer"></div>
+   <p></p>
+    </center>
+    <p><br> 
+    kalau udah dipencet tombol diatas klik <a href="ulang tahun.html">disini</a>
+    </p>
+</body>
+</html>
